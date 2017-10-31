@@ -35,4 +35,19 @@ public class node<x> {
     		root.in--;
     	}
     }
+
+public void removeAt(ArrayList<node<x>> var)
+{
+    if(var==null) return;
+    for(int i = 0; i < var.size(); i++)
+    {
+        node<x> temp = var.get(i);
+        if(temp.catalogue.contains(this))
+        {
+            temp.catalogue.remove(temp.catalogue.indexOf(this));
+        }
+    }
+    this.catalogue = null;
 }
+}
+
