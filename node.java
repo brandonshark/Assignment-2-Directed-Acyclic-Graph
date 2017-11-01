@@ -27,7 +27,7 @@ public class node<x> {
 
 	}
 
-	public void delink(node<x> root)
+	public void unlink(node<x> root)
 	{
 		if(root!=null)
 		{
